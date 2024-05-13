@@ -1,54 +1,68 @@
-# 📚 CIET - Can I Eat This?
+# 🍕 CIET - Can I Eat This? 🍲
 
-Ciet is an app for international tourists in Japan who have dietary preferences, such as being vegan, vegetarian, pescetarian, peanut-free etc..
-Users can use this app to scan the ingredients list on food packaging with their smartphone camera to get a full list of all ingredients and the app tells them whether its compatible with their diet.
+CIET is an web app that translates and analyses the food ingredient by scanning the ingredient list on the food package, showing results of whether the food is compatible with their diet preferences. Currently only translating Japanese to English text is available with diet preferences for vegan, vegetarian, pescetarian, peanut-free and diary-free.
 
-![image](https://github.com/Octosub/CIET/assets/135783511/8a7dba67-7482-451d-91a2-9b26dbea4fdd)
-![image](https://github.com/Octosub/CIET/assets/135783511/83e1f353-a535-40d0-9342-2e6882e6f09a)
-![image](https://github.com/Octosub/CIET/assets/135783511/341fed25-5bf2-4d20-b757-979e518f10ea)
-
-<br>
-App home: https://www.ciet.lol
-   
+https://www.ciet.lol
 
 ## Getting Started
+
 ### Setup
 
-Install gems
-```
+install gems
+
+```bash
 bundle install
 ```
 
-### ENV Variables
+###  ENV Variables
+
 Create `.env` file
-```
+
+```bash
 touch .env
 ```
-Inside `.env`, set these variables. For any APIs, see group Slack channel.
 
+Inside .env, set these variables and contact me if any API(s) and Access Token(s) is necessary!
+
+```bash
+CLOUDINARY_URL=your_own_cloudinary_url_key
+DEEPL_AUTH_KEY=deepl_api_key
+OPENAI_ACCESS_TOKEN=openai_access_token
+
+```
 
 ### DB Setup
-```
+
+```bash
 rails db:create
 rails db:migrate
 rails db:seed
 ```
 
-### Run a server
-```
+### Run The Server
+
+```bash
 rails s
 ```
-
 ## Built With
-- [Rails 7](https://guides.rubyonrails.org/) - Backend / Front-end
-- [Stimulus JS](https://stimulus.hotwired.dev/) - Front-end JS
-- [Heroku](https://heroku.com/) - Deployment
-- [PostgreSQL](https://www.postgresql.org/) - Database
-- [Bootstrap](https://getbootstrap.com/) — Styling
-- [Figma](https://www.figma.com) — Prototyping
+
+* **Frontend** - HTML, [SCSS](https://sass-lang.com/guide/), [Bootstrap](https://getbootstrap.com/), [Stimulus JS](https://stimulus.hotwired.dev/)
+* **Backend** - [Rails 7](https://guides.rubyonrails.org/)
+* **Deployment** - [Namecheap](https://www.namecheap.com/)
+* **Database** - [PostgreSQL](https://www.postgresql.org/)
+* **Prototyping** - [Figma](https://www.figma.com/)
 
 ## Team Members
-- [Felix Lange](https://www.linkedin.com/in/felix-edgar-lange/)
-- [Koji Mimura](https://www.linkedin.com/in/nadleeh/)
-- [Leandro Munoz](https://www.linkedin.com/in/leandro-a-munoz/)
-- [Noah Taiga Endo](https://www.linkedin.com/in/noah-taiga-endo/)
+
+* [Felix Edgar Lange](https://github.com/flxlng)
+* [Noah Taiga Endo](https://github.com/Octosub)
+* [Leandro Munoz](https://github.com/leamuno)
+* [Koji Mimura](https://github.com/imnadleeh)
+
+## FAQ
+
+Collaborations are welcome! Feel free to contact me or any other members for inquiries!
+
+Rails app generated with lewagon/rails-templates, created by the Le Wagon coding bootcamp team.
+
+README.md created using [README Creator](https://josuedla.github.io/readme-creator/) and [Editor.md](https://pandao.github.io/editor.md/en.html)
