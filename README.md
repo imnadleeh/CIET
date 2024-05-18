@@ -2,7 +2,7 @@
 
 CIET is an web app that translates and analyses the food ingredient by scanning the ingredient list on the food package, showing results of whether the food is compatible with their diet preferences. Currently only translating Japanese to English text is available with diet preferences for vegan, vegetarian, pescetarian, peanut-free and diary-free.
 
-Link to the website! → https://www.ciet.lol
+Link to the website: https://www.ciet.lol
 
 ## Getting Started
 
